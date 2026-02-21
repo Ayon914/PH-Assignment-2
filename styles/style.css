@@ -186,8 +186,8 @@
 /* About Section */
 .about {
     background-color: #1A0B2E;
-    padding-top: 1px; /* This breaks the margin collapse */
-    overflow: hidden; /* Alternative fix */
+    padding-top: 1px;
+    overflow: hidden; 
 }
 
 .about-container{
@@ -263,9 +263,68 @@
     margin-top: 16px;
 }
 
+/* Choose Section */
 
+.choose{
+    background-color: #230e3d;
+    color: white;
+}
 
+.choose>h2{
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-weight: 900;
+}
 
+.grid-container{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.box{
+    background-color:rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.card-1{
+    grid-column: span 1;
+    grid-row: span 2;
+    padding: 107.5px 40px;
+}
+.card-2{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.card-3{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.card-4{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.img,
+.h4{
+    padding-bottom: 16px;
+}
+
+.h4{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.p{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+}
 
 
 
@@ -327,5 +386,33 @@
     .acard {
         width: 100%;
     }
+
+
+    /* Choose */
+    .choose>h2{
+        font-size: 2rem;
+        padding-top: 40px;
+    }
+      .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 24px;
+        padding-bottom: 40px;
+    }
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+        grid-column: auto;
+    }
+
+    .card-1 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .box {
+        padding: 24px;
+    }
+
 
 }
