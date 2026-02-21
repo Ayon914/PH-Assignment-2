@@ -105,6 +105,21 @@
     transform: translate(-50%, -50%);
     z-index: 2; 
 }
+
+/* NEW badge */
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 37%;
+  background: #00ff9c;
+  color: #000;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  z-index: 3; 
+}
+
 .hero-contant{
     max-width: 550px;
     margin: 0 auto;
@@ -119,7 +134,7 @@
 }
 
 .hero-contant>p{
-    color: gray;
+    color: #ffffff;
     margin-top: 8px;
     margin-bottom: 24px;
     font-size: 1rem;
@@ -142,6 +157,10 @@
     font-size: 1rem;
     font-weight: 600;
 }
+.spotify-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 60, 172, 0.4);
+}
 
 .subscribe-btn{
     background: transparent;
@@ -155,6 +174,15 @@
     align-items: center;
     gap: 12px;
 }
+
+.subscribe-btn:hover {
+  background: #00ff9c;
+  color: #000;
+  box-shadow:
+  
+    0 0 40px #00ff9c;
+}
+
 
 
 
@@ -170,4 +198,26 @@
     .nav-icon{
         display: inline-block;
     }
+
+
+     /* Hero Section */
+    .hero{
+        background-size: 100% 100%;
+    }
+    .circle,
+    .mic {
+        /* width: 80%; */
+        padding: 10px;
+    }
+    .badge {
+    right: 25%;
+    }
+    .hero-contant>p{
+    color: #ffffff;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    }
+
 }
