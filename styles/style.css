@@ -150,6 +150,7 @@
     gap: 15px;
     align-items: center;
     justify-content: center;
+    border: none;
 }
 
 .spotify-btn{
@@ -455,12 +456,52 @@
 }
 
 
+/* Footer section */
+footer{
+    background-image: url(../assets/footer-bg.png);
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
-
-
-
-
-
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+.footer>h1 {
+    text-align: center;
+    padding-bottom: 32px;
+    font-size: 5rem;
+    font-weight: 900;
+}
+.links {
+    max-width: 544px;
+    margin: 0 auto;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 32px;
+    gap: 40px;
+}
+.social-item {
+    display: flex;
+    gap: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+}
+.social-item img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.copyright {
+    text-align: center;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+}
 
 
 
@@ -573,6 +614,20 @@
     .host-icon >a{
         align-items: center;
         margin: 0 auto;
+    }
+
+     /* Footer */
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .links {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .footer>h1 {
+        font-size: 4rem;
     }
 
 
