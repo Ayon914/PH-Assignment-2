@@ -291,20 +291,27 @@
     gap: 80px;
 }
 
-.acard{
-    text-align: center;
+.acard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .acard>h2{
     color: #00FF88;
     font-size: 3rem;
     font-weight: 900;
+    margin-bottom: 6px;
+    line-height: 1;
 }
 
 .acard>p{
     font-size: 1rem;
     color: gray;
     margin-top: 16px;
+    margin: 0;
+    text-align: center;
 }
 
 /* Choose Section */
@@ -593,18 +600,36 @@ footer{
         font-size: 2rem;
     }
 
-   
+   .acard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 110px;
+        text-align: center;
+    }
+
 
     .about-card {
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-        padding: 0 20px;
-        padding-bottom: 40px;
+        gap: 20px 16px;
     }
 
-    .acard {
-        width: 100%;
-    }
+    .acard>h2 {
+    font-size: 1.9rem;
+    margin-bottom: 6px;
+    line-height: 1;
+  }
+
+  .acard >p {
+    font-size: 0.7rem;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  .acard h2,
+.acard p {
+  width: 100%;
+}
 
 
     /* Choose */
